@@ -20,7 +20,7 @@ Các bước:
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXegracxlM1zwXtsRKM-UvdedDnAFX7Rr0_y1f9hk69cyo_QVk_ABSouIeEUqBqqnBYj2XhFaAFa4INaItF92kdju1VYlmu7LCYn0S939wzsQUQInbKMfzjNC4U5voC61pBVK89nIfzHdLzBcs4MsHKcHF-_?key=x066aHYoH5XtbJjV6Ng-LQ)
     
 3. Disassem chương trình file_del  
-`objdump -d file_del ` 
+`objdump -d file_del `\
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdTjMDyYv459ARkFwM9iVfszV8aeJE3pogQ5IPYlufXx9Gf1qQDDftJlwaLM5yJiLbRZYtzNP-EaMvejM5RU950YWJxdHmzckZM0Q7UdjbeUO2Bi92d8AULobsOv6Re5rWjZQ6TGi7CHwxng5A7CPMoBDY?key=x066aHYoH5XtbJjV6Ng-LQ)
     
 4. dịch chương trình file_del từ hợp ngữ thành mã máy  
@@ -32,7 +32,7 @@ Kết quả cho ra là: `\xeb\x13\xb8\x0a\x00\x00\x00\xbb\x7a\x80\x04\x08\xcd\x8
     ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeZ9ABA_1KiObJj2QUfm6Hy0BQ6SDoLV799XuttVum_Da6bMdiU-LALTjo86pyipoozIXO9kPrxy60iQeC3Cgvy3fMbLJoKTqHTQkVKQ-L-p4m1uOSpWZWKsFD3TXLvw8g_HO84sy0dn-HW8zux31lIarNM?key=x066aHYoH5XtbJjV6Ng-LQ)
     
 6.  aaa  
-`sudo ln -sf /bin/zsh /bin/sh`
+`sudo ln -sf /bin/zsh /bin/sh`\
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcB9mQh9boKp_0s3id9x_TNV91mrWeBvm6giv1E19Y358fttoRP8wzQybKpKhyhgKIYMp7qvA1d4rit8dM15g8Pukrfs161es2HPhcYO24Ka3RPjyUkDUYNkSfwkMsmW-Q4Q3vfiRSq8y4c6zZp1K3O3uI1?key=x066aHYoH5XtbJjV6Ng-LQ)  
     (Password: dees)
     
@@ -131,10 +131,10 @@ Trong lần đầu chạy thì chương trình sẽ dùng ở breakpoint
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdpuCT8PuyM6RgJHGoMm2Ct18_9HdO0kOFmKmWKnIuyRYaQVE9m7_lchyRN6qapxW9u49QFAilQDM8bS5AVjsL8XTgyQDNXK02C3xYqzbRUiZ_0yYKDClUet9JxbQGRoCkX37_xfoRG8-Jek8CVg1ApOy9Z?key=x066aHYoH5XtbJjV6Ng-LQ)\
 Tiếp tục chương trình bằng lệnh `continue` để đến breakpoint 2.
 Dùng lệnh `x/108xb $esp` để xuất 108 bytes kể từ địa chỉ của con trỏ esp.
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXca0HqNLeIUkPjoaxLj4-ARRXDTrdT-ybpOfs6D2-jn8vwyzymxjDfWs-HwCy4oHCDsrsJyGRRPEBGDB2M5vExdvCH4o4ekCpqY3SrVXVjqdNV6RELQHhZPorSLVgO3J044UsbSfwovPrd6VN1RGB31Yih0?key=x066aHYoH5XtbJjV6Ng-LQ)
-Chương trình sh đã được chèn thành công vào trong buf[100] của chương trình ctf.out
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXca0HqNLeIUkPjoaxLj4-ARRXDTrdT-ybpOfs6D2-jn8vwyzymxjDfWs-HwCy4oHCDsrsJyGRRPEBGDB2M5vExdvCH4o4ekCpqY3SrVXVjqdNV6RELQHhZPorSLVgO3J044UsbSfwovPrd6VN1RGB31Yih0?key=x066aHYoH5XtbJjV6Ng-LQ)\
+Chương trình sh đã được chèn thành công vào trong buf[100] của chương trình ctf.out\
 Chúng ta cần thay đổi địa chỉ của 'ra' thành địa chỉ của esp là địa chỉ xuất phát của chương trình được tiêm vào.\
-`set *0xffffd6e0 = $esp`
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGOnFEzJ_1UQhRK4IywOlc59rBKJbLnrcqXipIsoAiBdUP2XlVqtWruwgJsHRWmzlB9p6LBBhIuh-qPR6JJY2YnZ6uLhCXIssncTiyR8gDYA0qBCAXeVVuebCc2za7lb3G9TkmsuOLSlWeh0cXSB3mc-kA?key=x066aHYoH5XtbJjV6Ng-LQ)**
+`set *0xffffd6e0 = $esp`\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfGOnFEzJ_1UQhRK4IywOlc59rBKJbLnrcqXipIsoAiBdUP2XlVqtWruwgJsHRWmzlB9p6LBBhIuh-qPR6JJY2YnZ6uLhCXIssncTiyR8gDYA0qBCAXeVVuebCc2za7lb3G9TkmsuOLSlWeh0cXSB3mc-kA?key=x066aHYoH5XtbJjV6Ng-LQ)\
 *Giải thích: vì sao lại là 0xffffd6e0*
 *Vì tại địa chỉ bắt đầu của 'ra'*
