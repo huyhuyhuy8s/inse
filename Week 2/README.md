@@ -129,7 +129,7 @@ Sau đó rã hàm vuln và tìm vị trí của chương trình trước khi ch�
 Trong lần đầu chạy thì chương trình sẽ dùng ở breakpoint
 1. Dùng lệnh `x/108xb $esp` để xuất 108 bytes kể từ địa chỉ của con trỏ esp.\
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdpuCT8PuyM6RgJHGoMm2Ct18_9HdO0kOFmKmWKnIuyRYaQVE9m7_lchyRN6qapxW9u49QFAilQDM8bS5AVjsL8XTgyQDNXK02C3xYqzbRUiZ_0yYKDClUet9JxbQGRoCkX37_xfoRG8-Jek8CVg1ApOy9Z?key=x066aHYoH5XtbJjV6Ng-LQ)\
-Tiếp tục chương trình bằng lệnh `continue` để đến breakpoint 2.
+Tiếp tục chương trình bằng lệnh `continue` để đến breakpoint 2.\
 Dùng lệnh `x/108xb $esp` để xuất 108 bytes kể từ địa chỉ của con trỏ esp.
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXca0HqNLeIUkPjoaxLj4-ARRXDTrdT-ybpOfs6D2-jn8vwyzymxjDfWs-HwCy4oHCDsrsJyGRRPEBGDB2M5vExdvCH4o4ekCpqY3SrVXVjqdNV6RELQHhZPorSLVgO3J044UsbSfwovPrd6VN1RGB31Yih0?key=x066aHYoH5XtbJjV6Ng-LQ)\
 Chương trình sh đã được chèn thành công vào trong buf[100] của chương trình ctf.out\
