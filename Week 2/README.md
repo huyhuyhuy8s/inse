@@ -2,6 +2,10 @@ Lab 2:
 
 # Inject code to delete file: file_del.asm is given on github
 
+## chú ý lớn!!!
+- bài lab1: file_del.asm chú ý tới các dữ liệu \x0a và \x00
+- bài lab2: ctf.c không cần lấy quyền shell mà cần truy cập vào và chạy được hàm `myfun`
+
 Ý tưởng:
 
 -   Program injected: file_del.o được biên dịch từ file_del.asm
