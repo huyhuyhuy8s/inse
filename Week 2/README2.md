@@ -5,7 +5,7 @@ chạy docker:\
 
 ## chú ý lớn!!!
 - bài lab1: file_del.asm chú ý tới các dữ liệu \x0a và \x00
-- bài lab2: ctf.c không cần lấy quyền shell mà cần truy cập vào và chạy được hàm `myfun`
+- bài lab2: ctf.c không cần lấy quyền shell mà cần truy cập vào và chạy được hàm `myfunc`
 
 Ý tưởng:
 
