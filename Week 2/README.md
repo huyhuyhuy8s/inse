@@ -233,7 +233,8 @@ Stack của chương trình sau khi thực thi gọi hàm myfunc:\
 ![2_stack4](/Week%202/img/2_stack4.png)
 
 12. Tại breakpoint thứ 3, hàm sẽ nạp nội dung của file 'flag1.txt' vào rồi so sánh nội dung của nó với null. Nếu là null thì sẽ dừng lại chương trình.\
-Tuy nhiên tại đây thì từ [github của folder buffer_overflow](https://github.com/quang-ute/Security-labs/tree/main/Software/buffer-overflow) lại không có chưa file flag1.txt nên sẽ chia ra làm 2 hướng giải quyết:
+Tuy nhiên tại đây thì từ [github của folder buffer_overflow](https://github.com/quang-ute/Security-labs/tree/main/Software/buffer-overflow) lại không có chưa file flag1.txt nên sẽ chia ra làm 2 hướng giải quyết:\
+![github](/Week%202/img/2_github.png)
     1. Tự tạo ra 1 file flag1.txt trong thư mục buffer overflow rồi dùng notepad để ghi nội dung lên nó. Từ đó file flag1.txt khi được đọc sẽ pass.
     2. Thay đổi địa chỉ của **địa chỉ được đọc** để đổi hướng cho chương trình đọc nội dung từ nơi khác trong đó có tồn tại nội dung từ đó ẽ pass được.
     > Cá nhân em sẽ sử dụng cách 2 vì nó không can thiệp vào hệ thống folder của máy khi truy cập vào. Không cần dùng khả năng của user để có quyền tạo ra file rồi ghi nội dung lên nó.
