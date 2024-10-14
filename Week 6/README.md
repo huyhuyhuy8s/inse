@@ -2,6 +2,41 @@
 
 ## Table of Content
 
+[The Basics](#the-basics)
+
+- [Chapter 4: Web security](#chapter-4-web-security)
+  - [Table of Content](#table-of-content)
+  - [The Basics](#the-basics)
+    - [Web browser (Client Side)](#web-browser-client-side)
+      - [Web Architecture](#web-architecture)
+      - [Dynamic Contents](#dynamic-contents)
+      - [Javascript(JS) \& Sandbox](#javascriptjs--sandbox)
+      - [Javascript Engines](#javascript-engines)
+      - [Hoạt động của Javascript](#hoạt-động-của-javascript)
+      - [Sandbox Javascript](#sandbox-javascript)
+      - [Nội dung của trang JS có thể truy cập (DOM)](#nội-dung-của-trang-js-có-thể-truy-cập-dom)
+        - [HTML DOM](#html-dom)
+        - [HTML Objects](#html-objects)
+        - [Browser Objects](#browser-objects)
+        - [Accessing File](#accessing-file)
+    - [Web Server (Server Side)](#web-server-server-side)
+      - [Interacting with Server](#interacting-with-server)
+        - [HTTP Request \& Response](#http-request--response)
+        - [GET vs POST](#get-vs-post)
+    - [Cookies and Sessions](#cookies-and-sessions)
+      - [Cookies](#cookies)
+      - [Cài đặt Cookies](#cài-đặt-cookies)
+    - [Ajax, WebSocket, Same-origin Policy](#ajax-websocket-same-origin-policy)
+      - [Same-Origin Policy (SOP)](#same-origin-policy-sop)
+      - [Giải thích SOP](#giải-thích-sop)
+        - [Định nghĩa SOP](#định-nghĩa-sop)
+        - [Phân biệt Same-Origin Object (SOO) và Cross-Origin Object (COO)](#phân-biệt-same-origin-object-soo-và-cross-origin-object-coo)
+      - [SOP quan trọng như nào](#sop-quan-trọng-như-nào)
+  - [Web Attacks](#web-attacks)
+    - [Cross-site Request Forgery (CSRF)](#cross-site-request-forgery-csrf)
+    - [Cross-site Scripting Attack (XSS Attacks)](#cross-site-scripting-attack-xss-attacks)
+    - [SQL Injection Attack](#sql-injection-attack)
+
 ## The Basics
 
 Included:
@@ -194,10 +229,27 @@ Orgin là `http://normal-website.com`
 - Ngăn chặn ứng trên trên website đang chạy trên tab này truy suất dữ liệu trên website khác trên một tab khác. Tránh việc tiêm code trên server.
 - Giúp cho người dùng duyệt web một cách an toàn.
 
-## Cross-site Request Forgery (CSRF)
+## Web Attacks
+
+### Cross-site Request Forgery (CSRF)
 
 Lợi dụng cơ chế của Cross Domain Request
 
-## Cross-site Scripting Attack
+Các yếu tố thành công:
 
-## SQL Injection Attack
+- user vẫn còn đang đăng nhập thì hacker mới có thể giả mạo user Vì: phải tuân thủ theo SOP để từ chính máy của nạn nhân để bị động tạo request từ máy nạn nhân để thao tác.
+
+### Cross-site Scripting Attack (XSS Attacks)
+
+1. Cách XSS Attack hoạt động và nhận biết
+
+Có thể dùng comment bằng dòng mã js để tấn công và thực thi lệnh
+Nhận biết: 
+
+juice shop
+bwapp
+DVWA *simple and easy to use*
+thuyết trình -> có ví dụ -> bài lab minh hoạt: có kịch bản tấn công
+
+### SQL Injection Attack
+
