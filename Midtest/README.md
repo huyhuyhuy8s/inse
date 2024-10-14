@@ -2,14 +2,14 @@
 
 ## Table of Content
 
-| 1   | 2   | 3   | 4   | 5   | 6   |
-| --- | --- | --- | --- | --- | --- |
-| 7   | 8   | 9   | 10  | 11  | 12  |
-| 13  | 14  | 15  | 16  | 17  | 18  |
-| 19  | 20  | 21  | 22  | 23  | 24  |
-| 25  | 26  | 27  | 28  | 29  | 30  |
-| 31  | 32  | 33  | 34  | 35  | 36  |
-| 37  | 38  | 39  | 40  | 41  | 42  |
+| [1](#1-the-protection-measure-used-is-are)                                                                                                        | [2](#2-which-example-illustrates-an-organizations-responsibility-to-comply-with-an-individuals-right-to-correct-their-personal-data) | [3](#3-the-protection-measure-used-is-are)                               | [4](#4-what-technique-is-commonly-used-to-ensure-data-integrity)                                                       | [5](#5-what-is-csrf-in-web-security)                                                          | [6](#6-a-hacker-gains-access-to-a-companys-financial-records-modifies-them-and-then-deletes-the-original-files-which-security-goals-are-violated) |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [7](#7-a-hacker-gains-access-to-a-companys-financial-records-modifies-them-and-then-deletes-the-original-files-which-security-goals-are-violated) | [8](#8-which-of-the-following-java-code-snippets-is-safe-against-sql-injection)                                                      | [9](#9-what-is-the-primary-goal-of-secure-coding)                        | [10](#10-identify-correct-type-of-vulnerability-in-following-code)                                                     | [11](#11-what-kind-of-vulnerability-the-following-code-snippet-does-exhibit)                  | [12](#12-how-can-continuous-monitoring-help-in-mitigating-the-risks-of-impersonation)                                                             |
+| [13](#13-the-protection-measure-used-is-are)                                                                                                      | [14](#14-what-is-the-technique-behind-the--fno-stack-protector-gcc-option)                                                           | [15](#15-what-kind-of-vulnerability-in-the-following-code-snippet)       | [16](#16-the-protection-measure-used-is-are)                                                                           | [17](#17-which-of-the-following-best-describes-a-tamper-proof-feature-in-an-operating-system) | [18](#18-what-can-lead-to-increased-regulatory-scrutiny-for-organizations-that-fail-to-uphold-information-privacy-standards)                      |
+| [19](#19-john-has-security-clearance-as-top-secret-in-misc-affairs-department-what-can-you-state-about-johns-office-access-control-policy)        | [20](#20-what-is-the-primary-purpose-of-multi-factor-authentication-mfa)                                                             | [21](#21-what-kind-of-vulnerability-in-the-following-code-snippet)       | [22](#22-which-security-goals-are-violated-for-the-following-cases-answer-text-may-be-in-whichever-case)               | [23](#23-which-of-the-following-is-a-key-principle-of-defensive-programming)                  | [24](#42-what-is-a-significant-threat-posed-by-impersonation)                                                                                     |
+| [25](#)                                                                                                                                           | [26](#26-what-is-a-common-method-to-prevent-sql-injection-attacks-in-secure-coding)                                                  | [27](#27-which-of-the-following-belong-to-the-rule-based-access-control) | [28](#28-in-the-context-of-sql-injection-what-type-of-attack-does-the-following-input-represent---drop-table-users---) | [29](#)                                                                                       | [30](#)                                                                                                                                           |
+| [31](#)                                                                                                                                           | [32](#)                                                                                                                              | [33](#)                                                                  | [34](#)                                                                                                                | [35](#35-which-of-these-inputs-is-an-example-of-a-boolean-based-blind-sql-injection-attack)   | [36](#)                                                                                                                                           |
+| [37](#)                                                                                                                                           | [38](#38-which-of-the-following-security-levels-are-used-to-classify-documents-in-the-mandatory-access-control-system)               | [39](#39-which-type-of-vulnerability-does-expose-in-following-code)      | [40](#)                                                                                                                | [41](#41-the-protection-measure-used-is-are)                                                  | [42](#42-what-is-a-significant-threat-posed-by-impersonation)                                                                                     |
 
 ## The Test
 
@@ -171,15 +171,15 @@ Operating System with a robust design, as not to allow the execution of maliciou
 
 > Answer: 
 
-### 23. Which of the following is a key principle of defensive programming?
+### 24. Which of the following is a key principle of defensive programming?
 
-![23](/Midtest/img/23.jpg)
+![24](/Midtest/img/24.jpg)
 
 > Answer: 
 
-### 23. Which of the following is a key principle of defensive programming?
+### 25. Which of the following is a key principle of defensive programming?
 
-![23](/Midtest/img/23.jpg)
+![25](/Midtest/img/25.jpg)
 
 > Answer: 
 
