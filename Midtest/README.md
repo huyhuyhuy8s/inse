@@ -184,7 +184,7 @@ Operating System with a robust design, as not to allow the execution of maliciou
 
 ### 22. Which security goals are violated for the following cases (answer text may be in whichever case)
 
-![22](/Midtest/img/22.jpg)
+![22](/Midtest/img/22.png)
 
 > Answer: 
 
