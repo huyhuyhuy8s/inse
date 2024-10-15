@@ -17,7 +17,7 @@
 
 ![1](/Midtest/img/1.jpg)
 
-> Answer: 
+> Answer: d.
 
 ### 2. Which example illustrates an organization's responsibility to comply with an individual's right to correct their personal data?
 
@@ -29,7 +29,7 @@
 
 ![3](/Midtest/img/3.jpg)
 
-> Answer: 
+> Answer: b.
 
 ### 4. What technique is commonly used to ensure data integrity?
 
