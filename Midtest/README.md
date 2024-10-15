@@ -47,7 +47,21 @@
 
 ![6](/Midtest/img/6.jpg)
 
-> Answer: 
+> Answer: d. Integrity and e. Confidentialty
+
+- Confidentiality: 
+
+Đảm bảo tính bí mật của thông tin, tức là thông tin chỉ được phép truy cập (đọc) bởi những đối tượng (người, chương trình máy tính…) được cấp phép.
+
+- Integrity
+
+Đảm bảo tính toàn vẹn của thông tin, tức là thông tin chỉ được phép xóa hoặc sửa bởi những đối tượng được phép và phải đảm bảo rằng thông tin vẫn còn chính xác khi được lưu trữ hay truyền đi.
+
+Ngoài ra, một giải pháp “data integrity” có thể bao gồm thêm việc xác thực nguồn gốc của thông tin này (thuộc sở hữu của đối tượng nào) để đảm bảo thông tin đến từ một nguồn đáng tin cậy và ta gọi đó là tính “authenticity” của thông tin.
+
+- Availability
+
+Đảm bảo độ sẵn sàng của thông tin, tức là thông tin có thể được truy xuất bởi những người được phép vào bất cứ khi nào họ muốn.
 
 ### 7. A hacker gains access to a company's financial records, modifies them, and then deletes the original files. Which security goals are violated?
 
@@ -82,7 +96,8 @@ Có 3 loại tấn công lỗ hổng XSS phổ biến, gồm:
 
 - CSRF (viết tắt của Cross-Site Request Forgery) hay còn gọi là giả mạo yêu cầu chéo trang là một loại hình tấn công mạng trong đó kẻ tấn công lừa người dùng thực hiện các hành động trái ý muốn trên một trang web mà người dùng đã được xác thực.
 
-> Answer: a. vì người dùng có thể chèn mã đọc javascript vào trong mục input
+> Answer: c. vì dùng phương thức get
+> Không phải a vì php không chèn được javascript
 
 ### 11. What kind of vulnerability the following code snippet does exhibit?
 
@@ -100,7 +115,15 @@ Có 3 loại tấn công lỗ hổng XSS phổ biến, gồm:
 
 ![13](/Midtest/img/13.jpg)
 
-> Answer:  
+> Answer: c. neither secure coding nor defensive programming.
+
+This code snippet has several vulnerabilities:
+
+Using gets() is unsafe as it doesn't check for buffer overflow, which can lead to security issues.
+
+strcpy() can also cause buffer overflow if the input is longer than the destination buffer.
+
+Secure coding and defensive programming would involve using safer functions like fgets() and ensuring proper bounds checking.
 
 ### 14. What is the technique behind the -fno-stack-protector gcc option?
 
@@ -112,13 +135,13 @@ Có 3 loại tấn công lỗ hổng XSS phổ biến, gồm:
 
 ![15](/Midtest/img/15.jpg)
 
-> Answer: b. because then sql command 'select * from products where name like '%{query}%'" cannot return the error except the none.
+> Answer: d. because the error will be displayed while the blind sql injection will not have any error
 
 ### 16. The protection measure used is (are)
 
 ![16](/Midtest/img/16.jpg)
 
-> Answer: a. because there is not any protection have in the query. There is only the execute function.
+> Answer: b. using SQL statements
 
 ### 17. Which of the following best describes a Tamper-Proof feature in an operating system?
 
@@ -169,19 +192,19 @@ Operating System with a robust design, as not to allow the execution of maliciou
 
 ![23](/Midtest/img/23.jpg)
 
-> Answer: 
+> Answer: b. 
 
 ### 24. Which of the following is a key principle of defensive programming?
 
 ![24](/Midtest/img/24.jpg)
 
-> Answer: 
+> Answer: d. oval() is not secure duel to the XSS attacks
 
 ### 25. Which of the following is a key principle of defensive programming?
 
 ![25](/Midtest/img/25.jpg)
 
-> Answer: 
+> Answer: d.
 
 ### 26. What is a common method to prevent SQL injection attacks in secure coding?
 
@@ -206,11 +229,66 @@ d. is belong to MAC
 
 > Answer: a. stacked query is a query that have more than 1 command
 
+### 29. What does Correctness in the context of OS security mean?
+
+![29](/Midtest/img/29.jpg)
+
+> Answer: d. The OS is free from bugs and errors
+
+### 30. Which type of damage can result from a data breach or privacy violation for an organization?
+
+![30](/Midtest/img/30.jpg)
+
+> Answer: c. Reputational damage
+
+### 31. A Trusted Computing Base (TCB) involves which of the following features?
+
+![31](/Midtest/img/31.jpg)
+
+> Answer: a. Temper Proof, b. Complete Mediation and d. Correct (correctness)
+
+### 32. What does the principle of Complete Mediation ensure in an operating system?
+
+![32](/Midtest/img/32.jpg)
+
+> Answer: c. that all access to protected resources is mediated by security mechainism.
+
+### 33. Given a code snippet
+
+try:
+except ZeroDivisionError:
+print ("Cannot divide by zero")
+The protection measure used is (are):
+
+![33](/Midtest/img/33.jpg)
+
+> Answer: c. Defensive programming
+
+using try except with zerodivisionerror
+
+### 34. Given a code snippet
+
+![34](/Midtest/img/34.jpg)
+
+> Answer: c. Defensive programming
+
 ### 35. Which of these inputs is an example of a boolean-based blind SQL injection attack?
 
 ![35](/Midtest/img/35.jpg)
 
-> Answer: c. 
+> Answer: c.
+
+### 36. What is the samesite attribute in cookies?
+
+![36](/Midtest/img/36.jpg)
+
+> Answer: b.
+
+### 37. which of the following is a privacy concern specific to social media, similar to a persional diary?
+
+![37](/Midtest/img/37.jpg)
+
+> Answer: d.
 
 ### 38. Which of the following security levels are used to classify documents in the Mandatory Access Control system
 
