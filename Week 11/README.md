@@ -1,6 +1,6 @@
 # Chapter 6: Firewalls & IDS
 
-## Explain the role of Firewalls (FWs) as part of a computer & network sercurity strategy
+## 1. Explain the role of Firewalls (FWs) as part of a computer & network sercurity strategy
 
 ### Perimeter (phòng thủ ngoại biên) and Internal Defenses (phòng thủ bên trong) / Của hệ thống mạng
 
@@ -82,7 +82,7 @@ Firewall cannot protect:
 - Session filtering (per session): Một gói tin được kiểm tra dựa trên nội dung của chúng trong một session
 - > stateful
 
-## Types of Firewalls
+## 2. Types of Firewalls
 
 1. Packet-filtering routers | FW loại lọc từng gói tin
 2. Application-level gateways | FW hoạt động ở tầng ứng dụng

@@ -1,0 +1,25 @@
+# khái niệm
+dựa theo định nghĩa tạo ra tường lửa cho router (?)
+
+# type
+2 loại tường lửa nhưng theo lý thuyết gồm 3 
+
+Types of Firewalls
+Packet-filtering routers | FW loại lọc từng gói tin
+Application-level gateways | FW hoạt động ở tầng ứng dụng
+Circuit-level gateways | FW hoạt động trên mạch
+
+# limitation
+Firewall lọc dựa theo gói tin có thể lọc các infected file được không?
+
+# common type
+packet-filtering: phòng chống, kiểm tra và từ chối như nào?
+default policy
+
+# lab
+icmp any any icmp echo.request
+-> then response
+ 
+iptable -A FORWARD -p tcp -s 10.9.0.0/255.255.255.0 -sport 80 -d 172.16.10.110 -dport 80 -j DROP
+
+iptable -A FORWARD -p tcp -s 172.16.10.0/24 -sport 80 -d 10.9.0.10 -dport 80 -j DROP
